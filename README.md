@@ -32,7 +32,7 @@ npm start
 ## Deploy to Render
 Click the button or create a Web Service from this repo. Render uses `render.yaml`.
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/<your-username>/mlh-express-api-starter)
 
 ## Run on Replit
 Import this repo → it runs `npm start`. API path shows in the webview.
