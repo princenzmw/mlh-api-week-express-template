@@ -3,8 +3,14 @@
 Minimal Express API with health/hello/joke endpoints, **toggleable in-memory Tasks CRUD**, and **CORS** enabled.
 
 ## Endpoints
-- `GET /health` → `{ "status": "ok" }`
-- `GET /hello?name=Prince` → `{ "message": "Hello, Prince" }`
+- `GET /health` → 
+```json
+{ "status": "ok" }
+```
+- `GET /hello?name=Prince` → 
+```json
+{ "message": "Hello, Prince" }
+```
 - `GET /joke` → Two-part joke with deterministic fallback
 - **(Toggle)** `GET /tasks` → `{ tasks: [...] }`
 - **(Toggle)** `POST /tasks` → `{ id, text, done }` (JSON body: `{ text: string }`)
@@ -26,13 +32,13 @@ $env:TASKS_ENABLED = "true"; npm start    # enable
 ```bash
 npm install
 npm start
-# http://localhost:3000/health
+# Visit http://localhost:3000/health
 ```
 
 ## Deploy to Render
 Click the button or create a Web Service from this repo. Render uses `render.yaml`.
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/<your-username>/mlh-express-api-starter)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/princenzmw/mlh-express-api-starter)
 
 ## Run on Replit
 Import this repo → it runs `npm start`. API path shows in the webview.
